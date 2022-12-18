@@ -83,7 +83,7 @@ $token = $_SESSION['csrfToken'];
 年齢
 <select name="age">
     <option value="">選択してください</option>
-    <option value="1" selected>~19歳</option>
+    <option value="1">~19歳</option>
     <option value="2">20歳~29歳</option>
     <option value="3">30歳~39歳</option>
     <option value="4">40歳~49歳</option>
