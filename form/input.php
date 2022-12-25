@@ -96,11 +96,10 @@ $token = $_SESSION['csrfToken'];
 
             <div class="form-check form-check-inline">
                 <div>性別　</div>
-                <input type="radio" class="form-check-input id="gender1" name="gender" value="0" <?php if(isset($_POST['gender']) && $_POST['gender'] === "0"){echo 'checked'; }?>>
+                <input type="radio" class="form-check-input" id="gender1" name="gender" value="0" <?php if(isset($_POST['gender']) && $_POST['gender'] === "0"){echo 'checked'; }?>>
                 <label class="form-check-label" for="gender1">男性</label>
-                <input type="radio" class="form-check-input id="gender2" name="gender" value="1" <?php if(isset($_POST['gender']) && $_POST['gender'] === "1"){echo 'checked'; }?>>
+                <input type="radio" class="form-check-input" id="gender2" name="gender" value="1" <?php if(isset($_POST['gender']) && $_POST['gender'] === "1"){echo 'checked'; }?>>
                 <label class="form-check-label" for="gender2">女性</label>
-                <label for="url">
             </div>
 
             <div class="form-group">
@@ -130,6 +129,7 @@ $token = $_SESSION['csrfToken'];
 
             <input class="btn btn-info" type="submit" name="btn_confirm" value="確認する">
             <input type="hidden" name="csrf" value="<?php echo $token; ?>">
+            </form>
         </div>
     </div>
 </div>
